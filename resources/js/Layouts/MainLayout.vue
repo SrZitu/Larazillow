@@ -1,8 +1,8 @@
 <template>
   <div>Index</div>
-  <Link href="/">Main Page</Link>
+  <Link href="/">Main Page</Link><br>
   <Link href="/show">Show Page</Link>
-  <p>The page timer{{ timer }}</p>
+  <p>The page timer {{ timer }}</p>
 
   <slot></slot>
 </template>
