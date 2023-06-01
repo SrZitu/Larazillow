@@ -39,7 +39,7 @@ class ListingController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Listing  $listing)
+    public function show(Listing $listing)
     {
         return inertia(
             'Listing/Show',
