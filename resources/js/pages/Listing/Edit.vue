@@ -89,7 +89,8 @@ const form = useForm({
 });
 
 // /listing is the route path
-const update = () => form.put(`/listing/${props.listing.id}`);
+// listing: props.listing.id  is a parameter of the route
+const update = () => form.put(route('listing.update', {listing: props.listing.id}))
 const props = defineProps({
   listing: Object,
 });

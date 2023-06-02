@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Larazilow</title>
+        @routes
         @vite('resources/js/app.js')
         @inertiaHead
     <body >
