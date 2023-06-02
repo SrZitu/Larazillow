@@ -84,7 +84,7 @@ class ListingController extends Controller
      */
     public function update(Request $request, Listing $listing)
     {
-       $listing->update(
+        $listing->update(
             $request->validate(
                 [
                     'beds' => 'required|integer|min:0|max:20',
@@ -107,8 +107,9 @@ class ListingController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Listing $listing)
     {
-        //
+        $listing->delete();
+        return redirect()->back()->with('success', 'Listing is Deleted successfully');
     }
 }

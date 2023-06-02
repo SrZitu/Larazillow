@@ -4,14 +4,12 @@
   <Link href="/listing/create">Create List</Link>
   <div v-if="$page.props.flash.success" class="success">
     {{ $page.props.flash.success }}
-</div>
+  </div>
   <slot></slot>
 </template>
 
 <script setup>
-
 import { Link } from "@inertiajs/vue3";
-
 </script>
 
 <style scoped>
