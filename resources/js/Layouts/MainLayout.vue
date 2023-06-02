@@ -5,8 +5,6 @@
   <div v-if="$page.props.flash.success" class="success">
     {{ $page.props.flash.success }}
 </div>
-
-
   <slot></slot>
 </template>
 
@@ -18,7 +16,7 @@ import { Link } from "@inertiajs/vue3";
 
 <style scoped>
 .success {
-  background: green;
+  background: #5da472;
   color: white;
 }
 </style>
