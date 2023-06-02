@@ -1,7 +1,7 @@
 <template>
   <div>Index</div>
-  <Link href="/">Main Page</Link><br />
-  <Link href="/show">Show Page</Link>
+  <Link href="/listing">Listings</Link><br />
+  <Link href="/listing/create">Create List</Link>
   <div v-if="$page.props.flash.success" class="success">
     {{ $page.props.flash.success }}
 </div>
