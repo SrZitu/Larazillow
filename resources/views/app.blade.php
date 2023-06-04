@@ -8,7 +8,7 @@
         @routes
         @vite('resources/js/app.js')
         @inertiaHead
-    <body >
+    <body class="bg-white dark:bg-gray-400">
         @inertia
     </body>
 </html>
