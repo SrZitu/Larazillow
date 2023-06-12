@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
     <Box v-for="listing in listings" :key="listing.id">
       <div>
         <Link :href="route('listing.show', { listing: listing.id })">
